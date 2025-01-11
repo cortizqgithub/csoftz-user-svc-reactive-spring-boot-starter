@@ -37,7 +37,7 @@ class MemoryUserService : UserService {
         return userToInsert
     }
 
-    override fun retrieve(userId: String): User? = findUserInfo(userId).orElseGet { null };
+    override fun retrieve(userId: String): User? = findUserInfo(userId).orElseGet { null }
 
     override fun delete(userId: String) = userList.removeIf { user -> user.id == userId }
 
