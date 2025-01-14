@@ -22,7 +22,7 @@ import jakarta.validation.constraints.NotEmpty
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder("id", "name", "address")
-data class User(
+public data class User(
     val id: String?,
     @field:NotEmpty(message = "User Name is mandatory") val name: String?,
     @field:NotEmpty(message = "User Address is mandatory") val address: String?

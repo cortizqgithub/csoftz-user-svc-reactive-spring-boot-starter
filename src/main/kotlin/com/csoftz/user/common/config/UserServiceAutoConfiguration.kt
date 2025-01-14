@@ -19,13 +19,11 @@ import org.springframework.context.annotation.Bean
  * @author COQ - Carlos Adolfo Ortiz Q.
  */
 @AutoConfiguration
-class UserServiceAutoConfiguration {
+public class UserServiceAutoConfiguration {
 
     /**
      * Create the 'userService'.
      */
     @Bean
-    fun userService(): UserService {
-        return MemoryUserService()
-    }
+    fun userService(): UserService = MemoryUserService()
 }

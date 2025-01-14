@@ -16,7 +16,7 @@ import reactor.core.publisher.Flux
  *
  * @author COQ - Carlos Adolfo Ortiz Q.
  */
-interface UserService {
+public interface UserService {
     /**
      * Checks if user data is present in the list of Users. Here the {@Code id} field is used
      * in order to compute the existence.

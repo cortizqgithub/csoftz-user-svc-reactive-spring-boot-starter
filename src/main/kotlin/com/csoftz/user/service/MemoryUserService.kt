@@ -21,7 +21,7 @@ import reactor.core.publisher.Flux
  * @author COQ - Carlos Adolfo Ortiz Q.
  */
 @Service
-class MemoryUserService : UserService {
+public class MemoryUserService : UserService {
     private val userList: MutableList<User> = ArrayList()
 
     override fun exists(userId: String) = findUserInfo(userId).isPresent
